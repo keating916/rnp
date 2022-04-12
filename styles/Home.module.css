@@ -1,15 +1,16 @@
 .container {
   padding: 0 2rem;
+  
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.inlineList {
+  display: inline-block;
+  
+}
+.inlineList > ul {
+  width: 10rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .footer {

@@ -1,8 +1,166 @@
 html,
 body {
-  padding: 0;
+  padding: 2rem;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: black;
+  font-weight: 650;
 }
 
+body {
+    background-image: url("/files/Free_Wood_Texture_09.jpg");
+    
+}
+
+.locked {
+  overflow: hidden;
+}
+
+
+#formDiv, #topDiv, #projectDiv {
+  min-width: 100vw;
+  padding-top: 8vh;
+}
+
+#calcContainer{
+  display: grid;
+  max-width: 500px;
+  min-width: 250px;
+  height: 50vh;
+  column-count: 4;
+  margin: auto;
+  
+}
+
+#calculator {
+  background-color:rgb(29, 70, 158);
+  float: none;
+  height: 40vh;
+  padding: 2%;
+}
+
+#display {
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  border: 1px black;
+  border-radius: 10px;
+  height: 3vh;
+}
+
+#output{
+  margin-top: 10%;
+}
+
+.row {
+  text-align: center;
+  display: flex;
+  height: 6vh;
+  padding-top: .5%;
+  padding-bottom: .5%;
+  width: 100%;
+}
+
+#newQuoteFe {
+  width: 25%;
+  border-radius: 10px;
+}
+
+.end {
+  width: 50%;
+  height: 100%;
+  padding: 0px;
+}
+
+.googheader, .googfooter {
+  padding: 0;
+  margin: 0;
+  margin-right: 5%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+#googmain {
+  max-width: 500px;
+  padding: 10%;
+  margin: auto;
+  align-content: center;
+  text-align: center;
+  justify-content: space-between;
+  
+}
+
+#googheader, #googfooter, .googleft, .googright, #gLefthead, #gRighthead, #gleftfoot, #grightfoot {
+  display: flex;
+  text-decoration: none;
+  padding: 2%;  
+}
+
+#query {
+  border-radius: 15px;
+  height: 30px;
+  width: 100%;
+}
+
+#googlogo {
+  width: auto;
+  height: auto;
+  max-width: 272px;
+  margin: auto;
+}
+
+#googbuttons  {
+  padding: 0;
+  padding-bottom: auto;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  
+}
+
+#etchContainer {
+  margin: auto;
+  margin-top: 3vh;
+  max-width: 700px;
+  max-height: 700px;
+  height: 30vw;
+  width: 30vw;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+#twitterImg {
+  max-width: 40px;
+  padding-top: 2vh;
+}
+
+#newQuote {
+  background-color: yellow;
+  margin-top: 2vh;
+  height: 5vh;
+}
+
+.RPSButton {
+  width: 9em;
+}
+
+.scoreboard {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  justify-content: space-around;
+  border-radius: 9px;
+}
+
+.input {
+  width: 25%;
+  font-weight: bold;
+}
+
+.input.end {
+  width: 50%;
+  
+}

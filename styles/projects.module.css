@@ -1,0 +1,110 @@
+.opened {
+    padding-right: 1em;
+}
+
+.overlay {
+    width: 100vw;
+    height:100vw;
+    opacity: 100;
+    z-index: 1;
+    position: fixed; /* Stay in place */
+    top:0;
+    left: 0;
+    overflow: hidden;
+}
+
+.card {
+	/* Add shadows to create the "card" effect */
+    min-height: 30vh;
+	min-width: 300px;
+    max-width: 85vw;
+    display: flex;
+    justify-content:space-evenly;
+    flex-flow: column;
+    margin: 0 1rem 10px 1rem;
+    padding: 3px 0 1rem 0;
+    border-radius: 8px;
+    transition: box-shadow .15s linear;
+    background-color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .9);
+}
+
+/* Add some padding inside the card container */
+.cardContainer {
+	text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.cardImgHolder {
+    max-width: 30vw;
+    max-height: 200px;
+    height:100%;
+    width: 100%;
+}
+
+.cardImg {
+    max-width: 98%;
+    max-height: 304px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.popup {
+    position: fixed; /* Stay in place */
+    width: 80vw;
+    height: 90vh;
+    top: 5vh;
+    left: 10vw;
+    overflow: auto;
+    z-index: 2; /* Sit on top */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(253, 253, 253, 0.993); /* Solid White*/
+}
+
+.projectContainer {
+    padding: 3em;
+    text-align: center;
+}
+
+.close {
+    float: left;
+    height: 2em;
+    width: 2em;
+}
+
+.siteCard {
+    min-height: 350px;
+    transition: box-shadow .15s linear;
+    max-width: 85vw;
+    max-width: 350px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    justify-content: stretch;
+    align-content: stretch;
+}
+
+.siteCard > div {
+    height: 33%;
+}
+
+.siteCard:hover {
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .9);
+    
+}

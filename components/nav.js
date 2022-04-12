@@ -39,10 +39,9 @@ export default function TopNav() {
             </div>
             <div className={`${styles.nav} ${changed ? styles.change :""}`} id="nav" >
                 <Link href="/"><a className={styles.navLink} onClick={toggleButton}>Home</a></Link>
-                <Link href="/projects"><a className={styles.navLink} onClick={toggleButton}>Projects</a></Link>
-                <Link href="/commercial"><a className={styles.navLink} onClick={toggleButton}>Commercial Services</a></Link>
-                <Link href="/contact"><a className={styles.navLink} onClick={toggleButton}>Contact</a></Link>                
-                <p className={styles.navPhone}>Call us: <a id={styles.phoneLink} href="tel:5304171540"><img src={'/white-phone.png'} width={25} height={25} className={styles.icon} alt="phone icon" />530-417-1540</a></p>
+                <Link href="/projects"><a className={styles.navLink} onClick={toggleButton}>Projects</a></Link>    
+                <Link href="https://github.com/keating916"><a className={styles.navLink} onClick={toggleButton} target="_blank" rel='noreferrer'>Github</a></Link>     
+                <Link href="/files/pkResume.pdf"><a className={styles.navLink} onClick={toggleButton} target="_blank" rel="nofollow">Resume</a></Link>     
 
             </div>
 

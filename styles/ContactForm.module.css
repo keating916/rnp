@@ -1,0 +1,27 @@
+.formContainer {
+    padding-bottom: 50px;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.formControl {
+    color: #000;
+    width: 90vw;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#contactTextArea {
+    width: 90vw;
+    border: 1px solid black;
+}
+
+.formContainer > div > * {
+    display: inline-block;
+}
+
+.error {
+    color: rgb(134, 27, 27);
+}

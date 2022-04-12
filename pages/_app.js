@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import TopNav from '../components/nav'
+import ContactForm from '../components/ContactForm'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -8,6 +9,7 @@ function MyApp({ Component, pageProps }) {
 		<div className="body">
 			<Component {...pageProps} />
 		</div>
+    <ContactForm />
   </>
   )
 }

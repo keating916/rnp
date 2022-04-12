@@ -19,6 +19,7 @@
     width: 100%;
     margin: 0;
     padding: 0;
+	padding-left: 1rem;
     overflow:hidden;
     background-color: black;
     align-content: center;
