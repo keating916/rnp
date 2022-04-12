@@ -5,7 +5,6 @@ import styles from '../styles/projects.module.css'
 const ProjectCard = (props) => {
     let project = props.currentProject
     const item = props.item;
-    console.log(props)
     return(
         <div>
             <div className={styles.card} onClick={() => props.handleClick(item.id)}>

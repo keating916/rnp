@@ -1,63 +1,9 @@
-/* Navigation */
-.navContainer {
-    top:0;
-    left:0;
-    width: 100vw;
-    position: fixed;
-	z-index: 2;
-	height: 2.8em;
-	width: 100vw;
-    background-color: black;
-    margin: 0;
-}
-
-.nav {
-    list-style-type: none;
-    position: fixed;
-    top: 0;
-    left:0;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-	padding-left: 1rem;
-    overflow:hidden;
-    background-color: black;
-    align-content: center;
-    justify-content: center;
-  }
-  
-  .navPhone {
-    float:right;
-    margin: 0;
-    margin-right: 2rem;
-    align-content: center;
-    justify-content: center;
-  }
-  
-  .navLink{
-    display: inline;
-    color: white;
-    text-align: center;
-    padding: 10px 1em;
-    text-decoration: none;
-  }
-  
-  .navLink:hover {
-    color: black;
-    background-color: white;
-  }
-
-  .icon {
-      background-color: black;
-  }
-
-  
 .bar1,
 .bar2,
 .bar3 {
 	width: 35px;
 	height: 5px;
-	background-color: white;
+	background-color: #fff;
 	margin: 6px 0.3em;
 	transition: 0.4s;
 }
@@ -79,53 +25,226 @@
 	transform: rotate(45deg) translate(-8px, -8px);
 }
 
-@media screen and (min-width: 761px) {
+.navContainer {
+	top: 0;
+	left:0;
+	position: fixed;
+	z-index: 2;
+	height: 2.8rem;
+	line-height: 2.8rem;
+	width: 100vw;
+	background-color: black;
+}
 
-	.nav,
-	.nav.change {
+.row {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-content: center;
+}
+
+.navLink.rotated {
+	transform: rotate(180deg);
+	transition: .3s;
+}
+
+.changeCursor {
+	cursor: pointer;
+	color: #FFF;
+}
+
+.navLink {
+	color: #FFF;
+	transition: .3s;
+	padding: 0;
+}
+
+.navPhone{
+	float: right;
+	margin-right: 2em;
+	color: #FFF;
+}
+
+.contactButton {
+	float: right;
+	margin: 0 2em 0 0;
+	color: white;
+	font-size: xx-large;
+}
+
+.navBarDiv {
+	display: flex;
+}
+
+.changeCursor > p {
+	margin-top: 0;
+}
+
+.p1 {
+	padding-right: 5px;
+	margin: 0;
+}
+
+.overlay {
+    width: 100vw;
+    height:100vw;
+    opacity: 100;
+    z-index: 1;
+    position: fixed; /* Stay in place */
+    top:0;
+    left: 0;
+    overflow: hidden;
+}
+
+.hidden {
+	display: none;
+}
+
+.popup {
+    position: fixed; /* Stay in place */
+    width: 80vw;
+    height: 90vh;
+    top: 5vh;
+    left: 10vw;
+    overflow: auto;
+    z-index: 2; /* Sit on top */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+}
+
+.projectContainer {
+    padding: 2%;
+    text-align: center;
+    justify-content: center;
+}
+
+.close {
+    float: left;
+    height: 2em;
+    width: 2em;
+}
+
+
+/* Large Screens */
+@media screen and (min-width: 761px) {
+	
+
+	.logo {
+		padding-left: .5rem;
+	}
+
+	.navBar,
+	.navBar.change {
 		position: fixed;
-		padding: 0, 5px, 0, 5px;
-        margin-top: 0.8em;
+		padding: 0 1rem 0 1rem;
 	}
 
 	.hideButton {
 		display: none;
-		background-color: black;
+		background-color: #FFF;
 	}
 
 	.navLink {
 		padding-left: 1vw;
 		padding-right: 1vw;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.navDropdown {
+		display: none;
+		min-width: 24rem;
+	}
+
+	.navDropdown.show {
+		display: block;
+		transform: translate(20rem, -.2em);
+		background-color:black;
+	}
+
+	.navDropdown > .navLink {
+		display: block;
+	}
+
+	.p2 {
+		padding: 0;
+		margin-bottom: 0;
+	}
+
+	.navPhone {
+		display: none;
 	}
 }
 
 @media screen and (max-width: 760px) {
-	.nav {
+	.navBar {
 		display: none;
+		min-width: 6rem;
+		font-size: xx-large;
 	}
 
-	.navPhone {
-		margin-top: 0.8em;
+	.navBarDiv {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.changeCursor {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.changeCursor > p {
+		margin-bottom: 0;
+		padding-right: 3px;
 	}
 
 	.navbarToggler {
 		position: fixed;
 		z-index: 1;
+		padding-top: .2rem;
 	}
 
-	.nav.change {
-		display: block;
+	.navPhone {
+		margin-right: 1em;
+	}
+
+	.navBar.change {
 		z-index: 1;
 		position: fixed;
 		height: 100vh;
-		width: 30vw;
+		width: 60vw;
 		background-color: black;
-		margin-top: 2.4em;
+		margin-top: 2.8rem;
 		padding-left: 0.3em;
+		display: flex;
+		flex-direction: column;
 	}
 
-	.navLink {
-		display: block;
-        
+	.navDropdown {
+		display: none;
+		min-width: 6rem;
+		z-index: -1;
+	}
+
+	.navDropdown.show {
+		display: flex;
+		flex-direction: column;
+		transform: translate(40vw, -3em);
+		background-color: black;
+	}
+
+	.navDropdown > a {
+		border-bottom: 3px solid black;
+		line-height: 2em;
+		font-size: large;
+	}
+
+	.p2 {
+		font-size: medium;
+	}
+
+	.contactButton {
+		display: none;
 	}
 }

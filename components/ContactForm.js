@@ -66,8 +66,8 @@ export default class ContactForm extends Component {
                                 <input className={styles.formControl} type="text" name="lname" placeholder="Last Name"  value={this.state.lname} onChange={this.handleChange}  required />
                                 <input className={styles.formControl} type="email" name="contactEmail" placeholder="Email: you@yourdomain.com"  value={this.state.contactEmail} onChange={this.handleChange}  required />
                                 <input className={styles.formControl} type="tel" name="contactPhone" placeholder="Phone: 111-111-1111"  value={this.state.contactPhone}  required onChange={this.handleChange}  />
-                                <textarea name="comments" className={styles.formControl} placeholder="Comments" id="contactTextArea"  value={this.state.comments } onChange={this.handleChange}  ></textarea>
-                                <button className={styles.formControl} type="submit" id="formSubmitButton" disabled={d} onClick={evt => this.handleSubmit(evt)}>Submit</button>
+                                <textarea name="comments" className={`${styles.contactTextArea}`} placeholder="Comments" value={this.state.comments } onChange={this.handleChange}  ></textarea>
+                                <button className={styles.submitButton} type="submit" disabled={d} onClick={evt => this.handleSubmit(evt)}>Submit</button>
                             </form>
                     </div>
                 </div>
