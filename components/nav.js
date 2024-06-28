@@ -56,7 +56,7 @@ export default function TopNav() {
                 <Link href="/"><a className={styles.navLink} onClick={toggleButton}>Home</a></Link>
                 <Link href="/projects"><a className={styles.navLink} onClick={toggleButton}>Projects</a></Link>    
                 <Link href="https://github.com/keating916"><a className={styles.navLink} onClick={toggleButton} target="_blank" rel='noreferrer'>Github</a></Link>     
-                <Link href="/files/pkResume.pdf"><a className={styles.navLink} onClick={toggleButton} target="_blank" rel="nofollow">Resume</a></Link> 
+                <Link href="/files/resume.pdf"><a className={styles.navLink} onClick={toggleButton} target="_blank" rel="nofollow">Resume</a></Link> 
 				</div>
 				
 			</div>

@@ -1,10 +1,27 @@
 .container {
   padding: 0 2rem;
-  
 }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 3vh;
+}
+
+@media (max-width: 530px) {
+  .header{
+    text-align: center;
+    flex-wrap: wrap;
+  }
+}
+
+
 
 .inlineList {
   display: inline-block;
+  color: rgb(161, 231, 243);
+
   
 }
 .inlineList > ul {

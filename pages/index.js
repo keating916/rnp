@@ -17,10 +17,20 @@ export default function Home() {
 	let age = getAge();
 	return (
 		<main id="welcome-section" className={styles.container}>
-			<h1>
-				Hi! I'm Patrick Keating
-			</h1>
-			<h2>I'm a Web Developer</h2>
+			<div className={styles.header}>
+				<div>
+					<h1>
+						Hi! I'm Patrick Keating
+					</h1>
+					<h2>
+						I'm a Web Developer
+					</h2>
+				</div>
+				<div>
+					<Image src={"/files/headshot.jpg"} height={"160px"} width={"120px"}></Image>
+				</div>
+			</div>
+			
 			<br />
 			<p>
 				I have been studying programming for {age} years, since December 2018, and I have
@@ -35,7 +45,7 @@ export default function Home() {
 			<p>
 				I am currently working for a great company, and wearing many hats including:
 			</p>
-			<ul>
+			<ul className={styles.inlineList}>
 				<li>Web Developer</li>
 				<li>Marketing Specialist</li>
 				<li>IT Technician</li>

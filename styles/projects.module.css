@@ -3,6 +3,8 @@
 }
 
 .headers {
+    background-color: rgb(161, 231, 243);
+    border-radius: 9px;
     text-align: center;
 }
 
@@ -100,7 +102,7 @@
     border-radius: 9px;
     max-width: 85vw;
     max-width: 350px;
-    background-color: white;
+    background-color: rgb(161, 231, 243);
     text-decoration: none;
     color: black;
     text-align: center;

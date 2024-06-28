@@ -73,7 +73,7 @@ const projects = () => {
                         <hr />
                     </div>
                     <div className={styles.cardDiv}>
-                        <p>On Site SEO for RV Dealership in Napa, CA as well as Youtube channel and social media management</p>
+                        <p>On Site SEO for RV Dealership in Napa, CA as well as Youtube channel and social media management **Site no longer live**</p>
                     </div>
                     <div className={styles.cardDiv}>
                         <p>Video Editing - Social Media - SEO</p>
