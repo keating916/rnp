@@ -1,17 +1,14 @@
-import '../styles/globals.css'
-import TopNav from '../components/nav'
-import ContactForm from '../components/ContactForm'
+import { Bricolage_Grotesque, IBM_Plex_Sans } from 'next/font/google';
+import '../app/styles/globals.css';
 
-function MyApp({ Component, pageProps }) {
+const display = Bricolage_Grotesque({ subsets: ['latin'], variable: '--font-display' });
+const body = IBM_Plex_Sans({ subsets: ['latin'], weight: ['400', '600'], variable: '--font-body' });
+
+
+export default function App({ Component, pageProps }) {
   return (
-  <>	
-		<TopNav />
-		<div className="body">
-			<Component {...pageProps} />
-		</div>
-    <ContactForm />
-  </>
+    <div className={`${display.variable} ${body.variable}`}>
+      <Component {...pageProps} />
+    </div>
   )
 }
-
-export default MyApp
