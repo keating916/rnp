@@ -52,7 +52,7 @@ const work = [
     kind: 'SEO and social media',
     text: 'On-site SEO for an RV dealership in Napa, CA, plus YouTube and social media management. The site is no longer live.',
     stack: 'On-site SEO, video editing, social media',
-    href: 'https://www.youtube.com/@adventurervnapa/videos',
+    href: 'https://youtube.com/@adventurervgroup?si=0NgXhm0sajEZ2aaX',
   },
 ];
 
